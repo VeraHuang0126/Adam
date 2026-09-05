@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bp62kclomxdrw"]
+
+[ext_resource type="Script" uid="uid://b7aepl4jayhrv" path="res://player/scripts/Player.cs" id="1_oul6g"]
+[ext_resource type="Texture2D" uid="uid://dccbcdeopab7o" path="res://player/sprites/20178c96-e922-4b0a-a47b-945b1768fcbe.png" id="2_rkbax"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boad6"]
+size = Vector2(161, 263)
+
+[node name="Player" type="CharacterBody2D" unique_id=2106177346]
+position = Vector2(318, 0)
+script = ExtResource("1_oul6g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=904450262]
+position = Vector2(-315.97137, -137.56656)
+scale = Vector2(0.18307592, 0.2038537)
+texture = ExtResource("2_rkbax")
+offset = Vector2(16, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=889557310]
+position = Vector2(-313.5, -131.5)
+shape = SubResource("RectangleShape2D_boad6")
+debug_color = Color(0, 0.6, 0.69803923, 0.09019608)
+
+[node name="StateMachine" type="Node" parent="." unique_id=1285913753]
+
+[node name="IdleState" type="Node" parent="StateMachine" unique_id=646814712]
+
+[node name="RunState" type="Node" parent="StateMachine" unique_id=1682854613]
