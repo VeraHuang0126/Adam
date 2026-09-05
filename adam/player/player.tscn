@@ -20,9 +20,3 @@ offset = Vector2(16, 32)
 position = Vector2(-313.5, -131.5)
 shape = SubResource("RectangleShape2D_boad6")
 debug_color = Color(0, 0.6, 0.69803923, 0.09019608)
-
-[node name="StateMachine" type="Node" parent="." unique_id=1285913753]
-
-[node name="IdleState" type="Node" parent="StateMachine" unique_id=646814712]
-
-[node name="RunState" type="Node" parent="StateMachine" unique_id=1682854613]
